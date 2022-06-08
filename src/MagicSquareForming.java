@@ -1,13 +1,11 @@
 import java.util.Arrays;
 
 /**
- * Local version for debugging - input is hardcoded.
- *
  * Medium difficulty. Nasty one - I solve it by getting all valid
  * 3x3 magic squares, evaluating the absolute cost for each, then
  * returning the lowest.
  */
-public class MagicSquareFormingLocal {
+public class MagicSquareForming {
     int[][] validSquares = {
             {4, 9, 2, 3, 5, 7, 8, 1, 6},
             {4, 3, 8, 9, 5, 1, 2, 7, 6},
@@ -27,7 +25,7 @@ public class MagicSquareFormingLocal {
     int[] scores = new int[validSquares.length];
 
     public static void main(String[] args) {
-        MagicSquareFormingLocal m = new MagicSquareFormingLocal();
+        MagicSquareForming m = new MagicSquareForming();
 
         m.solveMultipleSquares();
     }
